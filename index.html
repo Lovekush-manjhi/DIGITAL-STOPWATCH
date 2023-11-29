@@ -1,0 +1,43 @@
+<!DOCTYPE html> <!-- Declaration of HTML5 document type -->
+<html lang="en"> <!-- Opening of the HTML document with language set to English -->
+<head>
+  <meta charset="UTF-8"> <!-- Declaring character encoding for the document as UTF-8 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Setting the viewport for responsive design -->
+  <title>Stopwatch App</title> <!-- Setting the title of the HTML document -->
+  <!-- Bootstrap CSS (we can include it from a CDN or locally) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css"> <!-- Linking Bootstrap CSS from a CDN -->
+  <link rel="stylesheet" href="style.css"> <!-- Linking a custom stylesheet called style.css -->
+</head>
+<body>
+  <div class="container mt-5"> <!-- Creating a container with top margin -->
+    <h1>STOP WATCH</h1> <!-- Heading for the stopwatch application -->
+  </div>
+  <div class="container mt-5"> <!-- Another container with top margin -->
+    <div class="row"> <!-- Creating a row within the container -->
+      <div class="col-12 text-center">
+        <!-- A column that spans 12 units on all screen sizes and contains text centered -->
+        <!-- <h1>Stopwatch</h1> -->
+        <!-- Commented out heading -->
+        <p>Press Start to begin the stopwatch.</p> <!-- Paragraph explaining the functionality -->
+        <p>Press Stop to pause the stopwatch.</p> <!-- Paragraph explaining the functionality -->
+      </div>
+    </div>
+    <div class="row"> <!-- Another row within the container -->
+      <div class="col-12 text-center">
+        <!-- A column that spans 12 units on all screen sizes and contains text centered -->
+        <button class="btn btn-primary" id="startButton">Start</button> <!-- Button to start the stopwatch -->
+        <button class="btn btn-secondary" id="stopButton" disabled>Stop</button> <!-- Button to stop/pause the stopwatch (initially disabled) -->
+        <button class="btn btn-danger" id="resetButton" disabled>Reset</button> <!-- Button to reset the stopwatch (initially disabled) -->
+      </div>
+    </div>
+    <div class="row mt-3"> <!-- Another row with top margin -->
+      <div class="col-12 text-center">
+        <!-- A column that spans 12 units on all screen sizes and contains text centered -->
+        <h2 id="display">00:00:00</h2> <!-- Display area for the stopwatch time -->
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script> <!-- Linking the JavaScript file script.js -->
+</body>
+</html>

@@ -1,0 +1,26 @@
+/* styles.css */ 
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.container {
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 32px;
+    background-color: #9FA5AA;
+    padding: 10px;
+  }
+  
+  h2 {
+    font-size:4rem;
+  }
+  
+  button {
+    margin: 10px;
+  }
+  /* this is style.css page */
+
+  
